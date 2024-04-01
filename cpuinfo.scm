@@ -66,19 +66,22 @@
 (define-public cpuinfo
   ;; There's currently no tag on this repo.
   (let ((version "0.0")
-        (revision "2")
+        (revision "3")
         (commit "f42f5eaf0bbeabd3a1153651cd2a5989faac4f58"))
     (package
       (name "cpuinfo")
       (version (git-version version revision commit))
-      (home-page "https://github.com/pytorch/cpuinfo")
+					;      (home-page "https://github.com/pytorch/cpuinfo")
+            (home-page "https://github.com/meta-introspector/cpuinfo")
       (source (origin
                 (method git-fetch)
                 (uri (git-reference (url home-page) (commit commit)))
                 (file-name (git-file-name name version))
 		(sha256
                  (base32
-                  "0i4ag87qgmww6nhxm8hkaf3qdvgahlflhd0m5bdn929j8c0scamm"))		
+		  ;; guix hash -x --serializer=nar .
+                  "0yv3glj0lgkb8lf80f2m3x0slb7yfy44qvkavn7i36jhv15nr84z"))
+		;; 0i4ag87qgmww6nhxm8hkaf3qdvgahlflhd0m5bdn929j8c0scamm
                ))
       (build-system cmake-build-system)
       (arguments
