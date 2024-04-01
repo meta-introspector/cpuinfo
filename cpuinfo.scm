@@ -80,9 +80,8 @@
 		(sha256
                  (base32
 		  ;; guix hash -x --serializer=nar .
-                  "0c69qismgn7khq6j47g708cfr8fcbr1pmwam1hi61h27nck6994x"
-		  ;; "0yv3glj0lgkb8lf80f2m3x0slb7yfy44qvkavn7i36jhv15nr84z"
-		  ;; 0i4ag87qgmww6nhxm8hkaf3qdvgahlflhd0m5bdn929j8c0scamm
+                  "01ak93saznw2wb27wjiw950dzp14flkgndw44nk93m7cvw4wsxr0"
+
 		  ))
 		))
       (build-system cmake-build-system)
