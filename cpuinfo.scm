@@ -67,7 +67,7 @@
   ;; There's currently no tag on this repo.
   (let ((version "0.0")
         (revision "3")
-        (commit "3e32515cb10f675d6a47951c109185956b4e8f1c"))
+        (commit "451e16d044f94b140a89c979af95a5a0107f779f"))
     (package
       (name "cpuinfo")
       (version (git-version version revision commit))
